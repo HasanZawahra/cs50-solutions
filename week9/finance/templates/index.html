@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th class="text-end">Price</th>
+            <th class="text-end">TOTAL</th>
+        </tr>
+    </thead>
+   <tbody>
+    {% for d in dic %}
+    <tr>
+        <td>{{ d.symbol }}</td>
+        <td>{{ d.name }}</td><td>{{ d.shares }}</td><td class="text-end">${{'%0.2f'| format(d.price|float)}}</td><td class="text-end">${{'%0.2f'| format(d.price*d.shares|float)}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    <tfoot>
+<tr><td class="border-0 fw-bold text-end" colspan="4">Cash</td><td class="border-0 fw-bold text-end">{{ cash }}</td></tr>
+<tr><td class="border-0 fw-bold text-end" colspan="4">Total</td><td class="border-0 fw-bold text-end">{{ tot }}</td></tr>
+    </tfoot>
+</table>
+{% endblock %}
