@@ -1,0 +1,47 @@
+.centered{
+    text-align: center;
+    background-color: #ffa400
+}
+#large{
+    font-size: 45pt;
+    color: black;
+}
+.medium{
+    font-size: 35pt;
+    color: black;
+}
+.small{
+    font-size: 15pt;
+    color: black;
+}
+.header {
+    background-color: #477bff;
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+}
+button, input[type="submit"] {
+    background-color: #d9edff;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.2;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+}
+input[type="text"]:hover {
+    background-color: #f5f5f5;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+input[type="text"] {
+    line-height: 2.0;
+    width: 12%;
+}
